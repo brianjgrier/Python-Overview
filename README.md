@@ -10,8 +10,8 @@ that include a simple power point presentation followed by a practical section
 where I demonstrate key concepts.
 
 If you want a deeper understanding of Python I recommend the course:
-  udemy.com<br>
 <p class="indented">
+    udemy.com<br>
     Complete Python Bootcamp: Go from Zero to Hero in Python<br>
     Instructor: Jose Portilla
 </p>
