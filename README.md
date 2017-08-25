@@ -1,2 +1,13 @@
 # Python-Overview
-Code snippets and power point slides  for an overview of Python 2/3
+This is my quick overview of Python, along with a couple of key differences
+between Python 2 and Python 3.
+
+My plan is to give you the tools you need to start exploring the features and
+flexibility of Python. This overview is divided into three one hour presentations
+that include a simple power point presentation followed by a practical section
+where I demonstrate key concepts.
+
+If you want a deeper understanding of Python I recommend the course:
+  udemy.com
+    Complete Python Bootcamp: Go from Zero to Hero in Python
+    Instructor: Jose Portilla
