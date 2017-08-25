@@ -1,5 +1,3 @@
-<style> .indented { padding-left: 50pt; padding-right: 50pt; } </style> 
-
 # Python-Overview
 This is my quick overview of Python, along with a couple of key differences
 between Python 2 and Python 3.
