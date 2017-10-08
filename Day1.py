@@ -67,9 +67,119 @@ print(type('hello'))
 l = [1,2]
 help(l)
 l.append(7)
+
 help(l.append)
 
 print('Printing a list: {}'.format(l))
+
+#
+#String an an immutable list
+obj = 'something with "SOMETHING" else'
+print obj
+
+# Find an object's type
+type(obj)
+
+# Get any "help" associated with an object
+help(obj)
+
+# Take a look inside the object
+dump(obj)
+
+# Get any "help" associated with an object's type
+help(type(obj))
+
+#
+# Sometimes using help on an object's type gives you to much infomration
+# At thesse times I use 'dump' to find the methods/functions and then ask for help
+# on the function I think I will need.
+
+dump(obj)
+
+# Get help for a method/function of an objects type
+help(obj.strip)
+
+#
+# A few examples of basic list comprehensions
+# At this point I will show the expected result as a python comment
+#
+myList = [1,6,3,6,2,0,6,89,46,23]
+myList
+#  [1, 6, 3, 6, 2, 0, 6, 89, 46, 23]
+myList.reverse()
+myList
+#  [23, 46, 89, 6, 0, 2, 6, 3, 6, 1]
+myList.sort()
+myList
+#  [0, 1, 2, 3, 6, 6, 6, 23, 46, 89]
+
+myList = ['Red', 'Blue', 'Magenta', 'Cyan']
+myList
+#  ['Red', 'Blue', 'Magenta', 'Cyan']
+myList.reverse()
+myList
+#  ['Cyan', 'Magenta', 'Blue', 'Red']
+myList.insert(3, 'Car')
+myList
+#  ['Cyan', 'Magenta', 'Blue', 'Car', 'Red']
+myList.insert(2,{'Blue':25})
+myList
+#  ['Cyan', 'Magenta', {'Blue': 25}, 'Blue', 'Car', 'Red']
+myList.insert(0,[1,3,6,3,4])
+myList
+#  [[1, 3, 6, 3, 4], 'Cyan', 'Magenta', {'Blue': 25}, 'Blue', 'Car', 'Red']
+myList.append("Yellow")
+myList
+#  [[1, 3, 6, 3, 4], 'Cyan', 'Magenta', {'Blue': 25}, 'Blue', 'Car', 'Red', 'Yellow']
+myList
+[[1, 3, 6, 3, 4], 'Cyan', 'Magenta', {'Blue': 25}, 'Blue', 'Car', 'Red', 'Yellow']
+'Yellow' in myList
+#  True
+myList.__contains__('Yellow')
+#  True
+len(myList)
+#  8
+myList.__len__()
+#  8
+
+
+#
+# Dictionaries - an unordered list of key:value pairs
+myDict = {1:"This text"}
+myDict
+#  {1: 'This text'}
+myDict.Append()
+# 
+#  Traceback (most recent call last):
+#    File "<pyshell#64>", line 1, in <module>
+#      myDict.Append()
+#  AttributeError: 'dict' object has no attribute 'Append'
+
+myDict['Device'] = {'Type': "router", 'capacity':5000}
+myDict
+#  {'Device': {'capacity': 5000, 'Type': 'router'}, 1: 'This TExt'}
+myDict[0]= 'This is an example of a dictionary element with a string'
+myDict
+#  {'Device': {'capacity': 5000, 'Type': 'router'}, 1: 'This TExt', 0: 'This is an example of a dictionary element with a string'}
+pprint.pprint(myDict)
+#  {0: 'This is an example of a dictionary element with a string',
+#   1: 'This TExt',
+#   'Device': {'Type': 'router', 'capacity': 5000}}
+myDict['key'] = 'Value'
+
+#
+# To get a real LIST from a dictionary
+myDict.items()
+#  [('Device', {'capacity': 5000, 'Type': 'router'}), (1, 'This TExt'), ('key', 'Value'), (0, 'This is an example of a dictionary element with a string')]
+pprint.pprint(myDict.items())
+#  [('Device', {'Type': 'router', 'capacity': 5000}),
+#   (1, 'This TExt'),
+#   ('key', 'Value'),
+#   (0, 'This is an example of a dictionary element with a string')]
+>>> 
+
+
+
 
 #
 # Function:
