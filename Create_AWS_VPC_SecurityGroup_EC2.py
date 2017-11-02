@@ -138,7 +138,7 @@ def setTags(ResId, resName):
                                  },
                                  {
                                      'Key': 'Data Classification',
-                                     'Value': 'Cisco Confidential'
+                                     'Value': 'Company Confidential'
                                  },
                                  {
                                      'Key': 'Environment',
@@ -150,11 +150,11 @@ def setTags(ResId, resName):
                                  },
                                  {
                                      'Key': 'Application Name',
-                                     'Value': 'ALM - Atlassian'
+                                     'Value': 'XYZ - Your Application name here'
                                  },
                                  {
-                                     'Key': 'Cisco Mail Alias',
-                                     'Value': 'atlassian-adm'
+                                     'Key': 'Mail Alias',
+                                     'Value': 'xyz-adm'
                                  },
                                  {
                                      'Key': 'Security Compliance',
